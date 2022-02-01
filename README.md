@@ -31,6 +31,7 @@ passfzf otp
 
 * pass
 * fzf  
+* find
 * awk  
 * xsel  
 * xclip  
