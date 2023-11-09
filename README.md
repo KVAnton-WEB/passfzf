@@ -1,6 +1,9 @@
 # passfzf
 pass + fzf 
 
+[pass](https://www.passwordstore.org/) — the standard unix password manager  
+[fzf](https://github.com/junegunn/fzf) is a general-purpose command-line fuzzy finder.
+
 Data is copied to the PRIMARY selection (`xsel --help`) — mouse middle click to paste.  
 The PRIMARY selection clears itself after 25 seconds (only if the data still matches the copied one)
 
@@ -33,8 +36,7 @@ passfzf otp
 * fzf  
 * find
 * awk  
-* xsel  
-* xclip  
+* wl-clipboard
 
 
 
