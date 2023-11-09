@@ -2,5 +2,7 @@
 
 output=`find ~/.password-store -type f | fzf | awk '{ sub(/^.*\.password-store\//, ""); sub(/\.gpg$/, ""); print }' | xargs pass $@`
 pass=`echo -e "${output}" | fzf | awk '{ sub(/^.*: /, "");print }'`
-echo $pass | xclip -i -sel p
-sleep 25 && if [[ `xsel -op` == "$pass" ]]; then xsel -cp & fi &
+#echo $pass | xclip -i -sel p
+#sleep 25 && if [[ `xsel -op` == "$pass" ]]; then xsel -cp & fi &
+wl-copy -p $pass
+sleep 25 && if [[ `wl-paste -p` == "$pass" ]]; then wl-copy -cp & fi &
